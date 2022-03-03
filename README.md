@@ -1,7 +1,17 @@
 # Fcitx5-breeze
 Fcitx5 theme to match KDE's Breeze style.
 
+For Arch Linux users, this theme is available on the AUR as `fcitx5-breeze`.
+
+## Build
+
+Run `bulid.sh` to build this theme. You need to have inkscape installed.
+
+This themes uses svg as the source format. However, in fcitx5 themes, png images are used.
+
 ## Installation
+
+To install this theme, you need to build it first or get a pre-built package from the [releases page](https://github.com/scratch-er/fcitx5-breeze/releases).
 
 Run `install.sh`. By default, this will install the theme into `/usr/local`.
 
@@ -21,9 +31,13 @@ If you want to install this theme only for yourself without root privilege, you 
 ./install.sh ~/.local
 ```
 
-To uninstall this theme, run `./uninstall.sh installation-prefix`
+To uninstall this theme, run `./uninstall.sh <installation-prefix>`, for example:
 
-For Arch Linux users, this theme is also available on AUR.
+```shell
+./uninstall.sh ~/.local
+```
+
+
 
 ## Acknowledgements
 
