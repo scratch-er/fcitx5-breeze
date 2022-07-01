@@ -40,7 +40,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:0.58;fill:$HIGHLIGHT$;fill-opacity:0.701961;stroke:$HIGHLIGHT;stroke-width:0.966246;stroke-linejoin:round;stroke-opacity:1"
+       style="opacity:0.58;fill:$ACCENT_COLOR$;fill-opacity:0.701961;stroke:$ACCENT_COLOR$;stroke-width:0.966246;stroke-linejoin:round;stroke-opacity:1"
        id="rect4423"
        width="37.033756"
        height="22.033754"

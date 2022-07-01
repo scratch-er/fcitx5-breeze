@@ -1,6 +1,6 @@
 [Metadata]
-Name[zh_CN]=$BACKGROUND_COLOR_NAME_ZH$微风
-Name=Breeze $BACKGROUND_COLOR_NAME$
+Name[zh_CN]=$BACKGROUND_COLOR_NAME_ZH$微风（$ACCENT_COLOR_NAME_ZH$）
+Name=Breeze $BACKGROUND_COLOR_NAME$ $ACCENT_COLOR_NAME$
 Version=1
 Author=Scratcher
 Description=Fcitx5 theme matching KDE's breeze style, $BACKGROUND_COLOR_NAME$ varient.

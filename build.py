@@ -10,6 +10,10 @@ variables = {}
 tags = []
 buildconfig =[]
 
+def mkne(dirname):
+    if not os.path.exists(dirname):
+        os.mkdir(dirname)
+
 # 从源文件中替换掉变量的值并写入目标文件
 def replace_variables(srcfile, destfile):
     srcfile = open(srcfile, "rt")
@@ -23,16 +27,21 @@ def replace_variables(srcfile, destfile):
 
 
 def write_file(dirname):
-    for srcfile, destfile in files.items():
-        destfile = os.path.join("build", dirname, destfile)
+    destdir = os.path.join("build", dirname)
+    mkne(destdir)
+    for destfile, srcfile in files.items():
+        destfile = os.path.join(destdir, destfile)
         if srcfile.endswith(".svg.in"):
+            # 生成svg文件并转换为png
             tmpfile = os.path.join("tmp", os.path.basename(srcfile) + ".svg")
-            cmd = "inkscape -o " + destfile + tmpfile
+            cmd = "inkscape -o " + destfile + " " + tmpfile
             replace_variables(srcfile, tmpfile)
             os.system(cmd)
         elif srcfile.endswith(".in"):
+            # 生成配置文件
             replace_variables(srcfile, destfile)
         else:
+            # 简单复制
             shutil.copy(srcfile, destfile)
 
 def build(level):
@@ -41,21 +50,31 @@ def build(level):
         for tag in tags:
             dirname += tag + "-"
         dirname = dirname[:-1]
+        print("Building theme "+dirname)
         write_file(dirname)
     else:
-        conf = buildconfig[level]
-        tags.append(conf["tag"])
-        files.update(conf["files"])
-        variables.update(conf["variables"])
-        build(level+1)
-        tags.pop()
-        for k in conf["files"].keys():
-            files.pop(k)
-        for k in cong["variables"].keys():
-            variables.pop(k)
+        conflist = buildconfig[level]
+        for conf in conflist:
+            conf_tag = conf.get("tag", "none")
+            conf_files = conf.get("files", {})
+            conf_vars = conf.get("variables", {})
+            tags.append(conf_tag)
+            files.update(conf_files)
+            variables.update(conf_vars)
+            build(level+1)
+            tags.pop()
+            for k in conf_files.keys():
+                files.pop(k)
+            for k in conf_vars.keys():
+                variables.pop(k)
 
 configfile = open(configfile, "rt")
-buildconfig = json.loads(configfile)
+buildconfig = json.load(configfile)
 configfile.close()
+
+mkne("tmp")
+mkne("build")
+
 build(0)
+
 shutil.rmtree("tmp")

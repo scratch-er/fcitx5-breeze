@@ -29,7 +29,7 @@
     ],
     [
         {
-            "tag": "bright",
+            "tag": "light",
             "variables": {
                 "BACKGROUND_COLOR": "#eff0f1",
                 "BACKGROUND_COLOR_NAME": "light",
