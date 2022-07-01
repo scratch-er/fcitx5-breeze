@@ -40,6 +40,10 @@ def write_file(dirname):
         elif srcfile.endswith(".in"):
             # 生成配置文件
             replace_variables(srcfile, destfile)
+        elif srcfile.endswith(".svg"):
+            # 转换为png
+            cmd = "inkscape -o " + destfile + " " + srcfile
+            os.system(cmd)
         else:
             # 简单复制
             shutil.copy(srcfile, destfile)
