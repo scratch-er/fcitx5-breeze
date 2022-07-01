@@ -1,17 +1,17 @@
 [Metadata]
-Name[zh_CN]=微风
-Name=Breeze
+Name[zh_CN]=$BACKGROUND_COLOR_NAME_ZH$微风
+Name=Breeze $BACKGROUND_COLOR_NAME$
 Version=1
 Author=Scratcher
-Description=Fcitx5 theme matching KDE's breeze style, light varient.
-Description[zh_CN]=与KDE微风主题相配套的Fcitx5主题，亮色版本。
+Description=Fcitx5 theme matching KDE's breeze style, $BACKGROUND_COLOR_NAME$ varient.
+Description[zh_CN]=与KDE微风主题相配套的Fcitx5主题，$BACKGROUND_COLOR_NAME_ZH$版本。
 ScaleWithDPI=True
 
 [InputPanel]
 EnableBlur=False
 Font=Sans 10
-NormalColor=#232629
-HighlightColor=#ffffff
+NormalColor=$NORMAL_COLOR$
+HighlightColor=$HIGHLIGHT_COLOR$
 Spacing=3
 
 [InputPanel/TextMargin]

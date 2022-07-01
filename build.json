@@ -1,0 +1,86 @@
+[
+    [
+        {
+            "tag": "breeze",
+            "files": {
+                "highlight.png": "assets/highlight.svg.in",
+                "radio.png": "assets/radio.svg",
+                "prev.png": "assets/prev.svg",
+                "next.png": "assets/next.svg",
+                "arrow.png": "assets/arrow.svg"
+            }
+        }
+    ],
+    [
+        {
+            "tag": "opaque",
+            "files": {
+                "panel.png": "assets/panel.svg.in",
+                "theme.conf": "config/theme.conf.in"
+            }
+        },
+        {
+            "tag": "translucent",
+            "files": {
+                "panel.png": "assets/panel_translucent.svg.in",
+                "theme.conf": "config/theme_translucent.conf.in"
+            }
+        }
+    ],
+    [
+        {
+            "tag": "bright",
+            "variables": {
+                "BACKGROUND_COLOR": "#eff0f1",
+                "BACKGROUND_COLOR_NAME": "light",
+                "BACKGROUND_COLOR_NAME_ZH": "亮色",
+                "NORMAL_COLOR": "#232629",
+                "HIGHLIGHT_COLOR": "#ffffff"
+            }
+        },
+        {
+            "tag": "dark",
+            "variables": {
+                "BACKGROUND_COLOR": "#1d2024",
+                "BACKGROUND_COLOR_NAME": "dark",
+                "BACKGROUND_COLOR_NAME_ZH": "暗色",
+                "NORMAL_COLOR": "#fcfcfc",
+                "HIGHLIGHT_COLOR": "#000000"
+            }
+        }
+    ],
+    [
+        {
+            "tag": "blue",
+            "variables": {
+                "ACCENT_COLOR": "#3daee9",
+                "ACCENT_COLOR_NAME": "Blue",
+                "ACCENT_COLOR_NAME_ZH": "蓝色"
+            }
+        },
+        {
+            "tag": "mint",
+            "variables": {
+                "ACCENT_COLOR": "#2db496",
+                "ACCENT_COLOR_NAME": "Mint",
+                "ACCENT_COLOR_NAME_ZH": "青色"
+            }
+        },
+        {
+            "tag": "purple",
+            "variables": {
+                "ACCENT_COLOR": "#c0afea",
+                "ACCENT_COLOR_NAME": "Purple",
+                "ACCENT_COLOR_NAME_ZH": "紫色"
+            }
+        },
+        {
+            "tag": "pink",
+            "variables": {
+                "ACCENT_COLOR": "#ec95c5",
+                "ACCENT_COLOR_NAME": "Pink",
+                "ACCENT_COLOR_NAME_ZH": "粉色"
+            }
+        }
+    ]
+]

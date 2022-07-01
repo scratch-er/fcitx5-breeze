@@ -5,9 +5,9 @@ For Arch Linux users, this theme is available on the AUR as `fcitx5-breeze`.
 
 ## Build
 
-Run `bulid.sh` to build this theme. You need to have inkscape installed.
+Run `bulid.py` to build this theme. You need to have inkscape installed.
 
-This themes uses svg as the source format. However, in fcitx5 themes, png images are used.
+This themes uses svg as the source format. However, in fcitx5 themes, png images are used. The build scripts generates .svg files from .svg.in files, generates theme config files from .conf.in files and convert .svg files to png with inkscape.
 
 ## Installation
 

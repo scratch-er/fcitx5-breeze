@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="panel_dark_translucent.svg"
+   sodipodi:docname="panel_light_translucent.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:1;fill:#1d2024;stroke:#c8c9c9;stroke-width:0.26458333;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.68627453"
+       style="opacity:1;fill:$BACKGROUND_COLOR$;stroke:#c8c9c9;stroke-width:0.264571;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.627451"
        id="rect846"
        width="2.9104285"
        height="2.9104288"
