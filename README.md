@@ -3,6 +3,9 @@ Fcitx5 theme to match KDE's Breeze style.
 
 For Arch Linux users, this theme is available on the AUR as `fcitx5-breeze`.
 
+## This Project has been migrated to GitLab
+https://gitlab.com/scratch-er/fcitx5-breeze
+
 ## Build
 
 Run `bulid.py` to build this theme. You need to have inkscape installed.
